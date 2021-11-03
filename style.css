@@ -55,3 +55,6 @@ main {
 .square.click{
     background-color: cornflowerblue;
 }
+.square.bomba{
+    background-color: red;
+}
