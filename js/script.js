@@ -28,15 +28,15 @@ if (numeroUtente == 3) {
 
 //Array con i numeri randomici delle caselle con bomba
 let bombe = []; 
-for (var i = 0; i < 16; i++){
+for (let i = 0; i < 16; i++){
     //Estrazione casuale di num compreso tra 0 e la difficolta
-    var numBomba =Math.floor(Math.random()*difficult)
+    let numBomba =Math.floor(Math.random()*difficult)
     //inserisco il numero estratto nell'array
     console.log( numBomba);
     bombe.push(numBomba)
 }
 
-// creo un ciclo for per la difficolta' 1
+// creo un ciclo for per la difficolta' 
 
 
 for (let i = 0; i < difficult; i++) {
@@ -62,9 +62,9 @@ let punteggio = 0;
 
 document.getElementById('punteggio').innerHTML = punteggio;
 
-var elements = document.getElementsByClassName("square");
+let elements = document.getElementsByClassName("square");
 
-for (var i = 0; i < elements.length; i++) {
+for (let i = 0; i < elements.length; i++) {
     elements[i].addEventListener('click', function(){
         punteggio = punteggio + 1;
         document.getElementById('punteggio').innerHTML = punteggio;
